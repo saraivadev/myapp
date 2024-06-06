@@ -9,14 +9,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Informações Pessoais',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      style: TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+              color: Colors.yellow, // Mudança na cor do título
+            ),
       home: MyHomePage(),
     );
   }
 }
-
 class MyHomePage extends StatelessWidget {
   final String nome = 'Washington Saraiva Santana';
   final int idade = 32;
@@ -29,13 +30,7 @@ class MyHomePage extends StatelessWidget {
         title: const Center(
           child: Text(
             'Informações Pessoais',
-            
-            style: TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 9, 31, 156), // Mudança na cor do título
-            
-            ),
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
           ),
         ),
       ),
@@ -85,7 +80,6 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-      
             const Divider(),
             Container(
               padding: const EdgeInsets.symmetric(vertical: 8),
