@@ -8,7 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       title: 'Informações Pessoais',
+       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -26,14 +28,15 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 184, 171, 241),
         title: const Center(
+                           
           child: Text(
-            'Informações Pessoais',
-            
+            'Informações Pessoais',            
             style: TextStyle(
               fontSize: 26,
               fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 9, 31, 156), // Mudança na cor do título
+              color: Color.fromRGBO(10, 57, 95, 0.863), // Mudança na cor do título
             
             ),
           ),
@@ -85,7 +88,6 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-      
             const Divider(),
             Container(
               padding: const EdgeInsets.symmetric(vertical: 8),
